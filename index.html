@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="M_Adnan">
+  
+  <title>區塊鏈創新學院</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="fonts/flaticon.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link rel="icon" href="images/ETDLogo.jpg" type="image/x-icon" />
+  <!-- JavaScripts -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Online Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800"
+    rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+  <!-- Socket IO -->
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+    integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg"
+    crossorigin="anonymous"></script>
+
+  <!-- Realtime block info js -->
+  <script src="./js/blockInfo.js"></script>
+  <script src="./js/chart.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="position-center-center">
+      <div class="ldr"></div>
+    </div>
+  </div>
+
+  <!-- Wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header class="sticky">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a> </div>
+        <nav class="navbar ownmenu navbar-expand-lg">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="scroll active"><a href="#hme">首頁</a></li>
+              <li class="scroll"> <a href="#token">課程</a> </li>
+              <li class="scroll"> <a href="#activity">關於我們</a> </li>
+              <li class="scroll"> <a href="#roadmap">聯繫我們</a> </li>
+			  <li class="dropdown"> 
+			  <a href="#">繁體中文</a> 
+			  <div class="dropdown-content">
+			    <p><a href="">简体中文</a></p>
+			    <p><a href="">English</a></p>
+			  </div>
+			  </li>
+			   
+			   
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+
+      <!-- Why Choose Us -->
+      <section class="why-choose padding-top-150 padding-bottom-150" style='background-image: url(images/bg1.png);
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		background-size: 100% 100%;'>
+		  
+        <div class="container">
+          <div class="row">
+			<div class="container text-left">
+            <h3 style="color:white;margin-left:100px;margin-top:100px;">區塊鏈高級研修班</h3>
+            </div>
+			<!-- Realtime Data -->
+            <div class="row" style="margin-top: 20px; font-color:white;">
+              <!-- Tittle -->
+
+            <!-- Image -->
+            <div class="col-md-5 text-right">  </div>
+          </div>
+        <div class="container text-left">
+          <!-- <p><strong>A Platform for Global Decentralized Scientific Collaboration<strong></p> -->
+          <p style='color:white;margin-left: 100px;'>Executive Master of Blockchain Applications</p>
+        </div>
+		<div class="container text-left">
+			<p style="color:white;margin-left:100px;margin-top:20px;width:516px; ">本課程旨在讓學生快速掌握區塊鏈技術的核心，深刻理解分佈式系統和共識經濟的底層技術架構和上層應用，洞悉區塊鏈發展趨勢和投資趨勢，了解區塊鏈應用的各種商業場景，並實際操作最前沿的區塊鏈技術平臺和項目應用。</p>
+          </div>
+		  
+		  <a href='https://docs.google.com/forms/d/e/1FAIpQLSexHJHumAaC2iKvzbBi-orpwRd9sCVTBBPqWa9s6G03FGY_kg/viewform'>
+			  <button type="button" style="background: #A5DEF8;width: 112px;height: 40px;border-radius: 4px;margin-left: 110px;">立即報名 ></button>
+		  </a>
+		  </div>
+        </div>
+      </section>
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container" id="scientist" data-spy="scroll">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>課程價值</span>
+	      </div>
+	      <ul class="row margin-top-50">
+	        <li class="col" style="border:1px solid #232F42;background: #232F42;border-radius: 10px;margin: 50px 27px;"> 
+			<img src="images/V1.png" height="50" width="50" style="margin:2em auto;">
+	          <p style="color: white;">學習區塊鏈的概念、發展歷程、運行原理、技術流派和典型應用場景</p>
+	        </li>
+	        <li class="col" style="border:1px solid #232F42;background: #232F42;border-radius: 10px;margin: 50px 27px;">
+				<img src="images/V2.png" height="50" width="50" style="margin:2em auto;">
+	          <p style="color: white;">掌握區塊鏈的商業本質和投資邏輯，識別和篩選優質區塊鏈項目</p>
+	        </li>
+	        <li class="col" style="border:1px solid #232F42;background: #232F42;border-radius: 10px;margin: 50px 27px;">
+				<img src="images/V3.png" height="50" width="50" style="margin:2em auto;">
+	          <p style="color: white;">瞭解各國對區塊鏈的政策和法律風險，找到適合自己的投資創業機會</p>
+	        </li>
+	        <li class="col" style="border:1px solid #232F42;background: #232F42;border-radius: 10px;margin: 50px 27px;">
+				<img src="images/V4.png" height="50" width="50" style="margin:2em auto;">
+	          <p style="color: white;">由資深區塊鏈專家為企業量身定制區塊鏈轉型應用方案，實現從區塊鏈原理培訓到應用落地的完整服务</p>
+	        </li>
+	      </ul>
+	  </section>
+	  
+	  
+	  
+	  
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>課程福利</span>
+	      <p style="line-height:40px;color: white;">裝備「軟」「硬」實力，成為區塊鏈技術應用及新興行業先驅，課程將提供：</p>
+		  </div>
+	      <ul class="row margin-top-50 margin-bottom-50">
+	        <li class="col"> <img src="images/V5.png" height="40" width="40">
+	          <p style="margin-top:20px;color: white;">區塊鏈Token(可用於支付其它課程或參與各類活動)</p>
+	        </li>
+	        <li class="col"><img src="images/V5.png" height="40" width="40">
+	          <p style="margin-top:20px;color: white;">區塊鏈線上專業平臺帳戶</p>
+	        </li>
+	        <li class="col"><img src="images/V5.png" height="40" width="40">
+	          <p style="margin-top:20px;color: white;">區塊鏈科技園區成員資格</p>
+	        </li>
+			</ul>
+			
+			<ul class="row margin-top-50 margin-bottom-50">
+			<li class="col"> <img src="images/V5.png" height="40" width="40">
+			  <p style="margin-top:20px;color: white;">海外遊學 - 頂尖企業家遊學團</p>
+			</li>
+			<li class="col"><img src="images/V5.png" height="40" width="40">
+			  <p style="margin-top:20px;color: white;">海內外優秀企業家、投資人資源，頂級導師團、創始人/CEO圈子</p>
+			</li>
+			<li class="col"><img src="images/V5.png" height="40" width="40">
+			  <p style="margin-top:20px;color: white;">香港金融管理學院證書認證</p>
+			</li>
+	      </ul>
+	  </section>
+	  
+	  
+	  
+	  <!-- Development -->
+	  <section class="dev-activ padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>課程大綱</span>
+	      </div>
+	      <ul class="row margin-top-50 margin-bottom-50">
+			  
+	        <li class="col"> 
+			  
+			  <button style="border-radius: 5px;"><div id="clickOpen" style="color:#A5DEF8">课程一：區塊鏈底層原理和技術 V </div></button>
+			  <br>
+			  <ul class="list">
+			      <li class="item" style="color:white">瞭解區塊鏈技術基礎的重要性</li>
+                  <li class="item" style="color:white">區塊鏈的起源、特點和價值</li>
+                  <li class="item" style="color:white">區塊鏈技術本質</li>
+                  <li class="item" style="color:white">密碼學和安全技術</li>
+                  <li class="item" style="color:white">比特幣與區塊鏈的關係</li>
+                  <li class="item" style="color:white">比特幣的誕生及現狀</li>
+                  <li class="item" style="color:white">乙太坊以及智慧合約</li>
+                  <li class="item" style="color:white">區塊鏈技術的安全性、隱私性和可擴展性</li>
+                  <li class="item" style="color:white">跨鏈</li>
+                  <li class="item" style="color:white">企業級區塊鏈</li>
+			  </ul>
+			  
+			  <br>
+			  
+			  <button style="border-radius: 5px;"><div id="clickOpen1" style="color:#A5DEF8">课程二：區塊鏈應用與商業場景 V </div></button>
+			  <br>
+			  <ul class="list1">
+			      <li class="item" style="color:white">區塊鏈的六大優勢</li>
+				  <li class="item" style="color:white">區塊鏈對現有技術的顛覆</li>
+			      <li class="item" style="color:white">區塊鏈的十大應用</li>
+			      <li class="item" style="color:white">區塊鏈項目白皮書分析</li>
+			      <li class="item" style="color:white">金融業</li>
+			      <li class="item" style="color:white">供應鏈管理</li>
+			      <li class="item" style="color:white">文娛產權保護</li>
+			      <li class="item" style="color:white">教育行業</li>
+			      <li class="item" style="color:white">製造業</li>
+			      <li class="item" style="color:white">醫療資料</li>
+			      <li class="item" style="color:white">認證管理</li>
+			      <li class="item" style="color:white">公共管理</li>
+			      <li class="item" style="color:white">法律和審計</li>
+			      <li class="item" style="color:white">物聯網、大數據、雲計算、AI</li>
+			      <li class="item" style="color:white">區塊鏈在遊戲行業的應用</li>
+			  </ul>
+			  
+			  <br>
+			  
+			  <button style="border-radius: 5px;"><div id="clickOpen2" style="color:#A5DEF8">课程三：區塊鏈金融 V </div></button>
+			  <br>
+			  <ul class="list2">
+                  <li class="item" style="color:white">什麼是金融科技</li>
+                  <li class="item" style="color:white">區塊鏈與金融科技的關係</li>
+                  <li class="item" style="color:white">區塊鏈帶來的新機遇</li>
+                  <li class="item" style="color:white">代幣的發行和商業模式創新</li>
+                  <li class="item" style="color:white">數字貨幣交易所</li>
+                  <li class="item" style="color:white">如何投資數字貨幣</li>
+                  <li class="item" style="color:white">區塊鏈的金融應用場景</li>
+                  <li class="item" style="color:white">眾籌票據業務</li>
+                  <li class="item" style="color:white">清算、結算與審計</li>
+                  <li class="item" style="color:white">資產確認</li>
+                  <li class="item" style="color:white">許可公證與記錄</li>
+                  <li class="item" style="color:white">自由貿易</li>
+			  </ul>
+			  
+			  <br>
+			  
+			  <button style="border-radius: 5px;"><div id="clickOpen3" style="color:#A5DEF8">课程四：區塊鏈認知誤區和認知升級 V </div></button>
+			  <br>
+			  <ul class="list3">
+				   <li class="item" style="color:white">各國政府的態度與監管</li>
+				   <li class="item" style="color:white">中國及香港區塊鏈的監管解讀</li>
+				   <li class="item" style="color:white">區塊鏈的法律問題——反洗錢</li>
+				   <li class="item" style="color:white">對區塊鏈認知的誤區</li>
+				   <li class="item" style="color:white">如何辨別偽區塊鏈應用</li>
+				   <li class="item" style="color:white">如何辨別偽區塊鏈投資</li>
+				   <li class="item" style="color:white">對區塊鏈認知的升級</li>
+			  </ul>
+			  
+			  <br>
+			  
+			  <button style="border-radius: 5px;"><div id="clickOpen4" style="color:#A5DEF8">课程五：全球區塊鏈和數字經濟發展前沿 V </div></button>
+			  <br>
+			  <ul class="list4">
+				<li class="item" style="color:white">區塊鏈數字經濟發展前沿</li>
+				<li class="item" style="color:white">數字經濟帶動產業升級</li>
+				<li class="item" style="color:white">數位經濟的技術原理</li>
+				<li class="item" style="color:white">數字經濟的資本價值</li>
+				<li class="item" style="color:white">數字經濟的未來趨勢</li>
+				<li class="item" style="color:white">區塊鏈對數字經濟的補足</li>
+				<li class="item" style="color:white">區塊鏈商業應用的全球進展</li>
+				<li class="item" style="color:white">從互聯網、大數據到人工智能</li>
+				<li class="item" style="color:white">從物聯網、虛擬實境到機器智能</li>
+				<li class="item" style="color:white">從產業互聯到智能製造</li>
+				<li class="item" style="color:white">消費互聯與產業互聯</li>
+				<li class="item" style="color:white">區塊鏈行業投資趨勢</li>
+				<li class="item" style="color:white">互聯網與區塊鏈</li>
+				<li class="item" style="color:white">區塊鏈的未來趨勢</li>
+				<li class="item" style="color:white">幣圈與鏈圈的恩怨</li>
+				<li class="item" style="color:white">契約精神與商業文明</li>
+			  </ul>
+			</li>
+
+
+			</html>
+<img src="images/image1.png" height="193" width="428">
+	  			</ul>
+	  </section>
+	  
+	  
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>招生對象</span>
+	     </div>
+	      <ul class="row margin-top-50 margin-bottom-50">
+	        <li class="col"> 
+			<p style="margin-top:20px; background-color:#A5DEF8;border-radius: 5px;width: 117px; ">行業領域</p>
+	          <p style="margin-top:20px;color: white;width: 320px; ">金融、互聯網、物聯網、雲計算、教育、遊戲、醫療、文化、娛樂、物流、製造業、認證公證、公共管理、法律和審計、旅遊行業等</p>
+	        </li>
+	        <li class="col">
+				<p style="margin-top:20px;background-color:#A5DEF8;border-radius: 5px;width: 117px;">適合人群</p>
+	          <p style="margin-top:20px;color: white;width: 320px;">企業家、高層戰略管理者、CFO等財務負責人、區塊鏈投資人、新興互聯網創業者</p>
+	        </li>
+	  			</ul>
+	  			
+	  		
+	  </section>
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>課程安排</span>
+	     </div>
+	      <ul class="col text-left margin-top-50 margin-bottom-50">
+	        <li class="col"> 
+	          <img src="images/V9.png" style='width:16px;'><span style="font-size: 14px;color: white; ">課程時長：6個月，每月上課2天。</span>
+	        </li>
+			<br>
+			<li class="col">
+			  <img src="images/V10.png" style='width:20px;'><span style="font-size: 14px;color: white; ">授課地點：主課室位於香港上環德輔道西九號，其他考察及實訓場所另行安排。部分課程可以線上安排。</span>
+			</li><br>
+			<li class="col">
+			  <img src="images/V11.png" style='width:16px;'><span style="font-size: 14px;color: white;">人數：每班20-30人。</span>
+			</li><br>
+			<li class="col">
+			  <img src="images/V12.png" style='width:16px;'><span style="font-size: 14px;color: white; ">遴選安排：為保證最佳教學品質、維護區塊鏈優質圈子，需要考核並有名額限制，將根據考核結果確定席位。</span>
+			</li><br>
+			<li class="col">
+			  <img src="images/V13.png" style='width:16px;'><span style="font-size: 14px;color: white; ">學費：98000港元/人（包含培訓費、課程資料費、導師差旅費、課外活動費、項目實訓費、初步諮詢費等）</span>
+			</li>
+	  			</ul>
+	  			
+	  		
+	  </section>
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container" id="scientist" data-spy="scroll">
+	      <div class="sm-intro">
+	        <h2 style="color: #A5DEF8;">掌握金融科技，開拓元宇宙前沿商機</h2><br>
+	        <h5 style="color: white;">區塊鏈EMBA班</h5>
+			<p style="color: white;">Executive Master of Blockchain Applications</p>
+	      </div>
+	      <ul class="row margin-top-50">
+	        <li class="col"> <img src="images/image2.png" height="100" width="100"><br><br>
+	  			<h4 class="h6" style="color: white;">香港金融管理學院</h4><br>
+	          <p style="color: white;">香港金融管理學院於1999年在香港註冊成立,是一所專門從事學位學歷教育和專業培訓的教育機構,是國家外國專家局認定的國際人才交流服務機構（管道號225203）。（www.hkfsi.edu.hk）</p>
+	        </li>
+			<li class="col"><img src="images/V14.png" height="50" width="50">
+			  </li>
+	        <li class="col"><img src="images/image3.png" height="100" width="100"><br><br>
+	          <h4 class="h6" style="color: white;">區塊鏈創新學院</h4><br>
+			  <p style="color: white;">“區塊鏈創新學院”由香港金融管理學院發起，為企業家、創業者、政府和企業高管、技術人才提供頂級培訓課程和交流活動，培養高層次、複合型的優秀區塊鏈人才，並提供區塊鏈相關咨詢及項目應用服務。</p>
+	        </li>
+	      </ul>
+	  </section>
+	  
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="text-left" style="margin-left:100px;float:left;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>院長介紹</span>
+	      <h5 style="line-height:40px;color: #A5DEF8;">雷志斌教授</h5>
+		  <p style="line-height:0px;color: white;">區塊鏈創新學院院长</p>
+		  <br>
+	  		<p style="line-height:30px;width:522px;color:white;">北京大學數學系學士，布朗大學應用數學碩士及電子工程博士。
+	  		香港科技大學客座教授，以太數據基金會技術顧問
+	  		
+	  		曾任職貝爾實驗室、朗訊科技、松下美國信息實驗室和香港中文
+	  		大學，曾任香港應用科技研究院研發總監，美國新州華人電腦協
+	  		會主席，北京首批海外專家團。
+	  		
+	  		創立多家高科技企業，主持完成二十余項前沿創新項目，發表一百
+	  		多篇論文，獲得多個國際科技大獎，強調區塊鏈和AI、大數據的
+	  		實際應用，提升產品的創新和商業化能力。</p>
+			</div>
+			<div style="float:right;"><img src="images/image4.png" style="width: 250px;"></div>
+	  </section>
+	  
+	  
+	  
+	  
+	  
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;>
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>團隊優勢</span>
+	      </div>
+	      <ul class="row margin-top-50 margin-bottom-50">
+	        <li class="col"> 
+			<img src="images/V6.png" height="50" width="50" style="margin:2em auto;">
+	          <h5 style="color:white;">雄厚的師資團隊</h5>
+			  <p style="color:white;width: 300px;position: absolute;left: 100px;">知名高校、研究院所及企業的教授專家
+政府政策制定者和監管機構高管
+國內外區塊鏈領域的投資人、企業家及高管
+具有豐富開發經驗和實操經驗的技術大咖</p>
+	        </li>
+	        <li class="col">
+				<img src="images/V7.png" height="50" width="50" style="margin:2em auto;">
+	          <h5 style="color:white;">豐富的教學經驗</h5>
+			  <p style="color:white;width: 300px;position: absolute;left: 100px;">二十年來辦班上千個，培訓各類公職及企管人員近十萬人
+教授團隊具有在海內外知名高校任教和研究的豐富經歷</p>
+	        </li>
+	        <li class="col">
+				<img src="images/V8.png" height="50" width="50" style="margin:2em auto;">
+	          <h5 style="color:white;">完善的合作網絡</h5>
+			  <p style="color:white;width: 300px;position: absolute;left: 100px;">中國內地、香港及海外的政策制定者和監管機構
+全球區塊鏈相關行業協會、知名高校、頭部企業等
+香港金融、投資、法律、會計等專業機構</p>
+	        </li>
+	      </ul>
+	  </section>
+	  
+
+
+	  <!-- Development -->
+	  <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+	    <div class="container">
+	      <div class="container text-left" style="margin-left:100px;">
+	        <img src="images/Vector.png" style='width:20px;'><span style='color: white;padding-left: 10px;'>課程報名</span>
+	     </div>
+	      <ul class="col text-left margin-top-50 margin-bottom-50">
+	        <li class="col"> 
+	          <span style="font-size: 14px;color: white; ">点击报名登記，我們將有專人聯絡並安排課程介紹及報名程序！ </span>
+	        </li>
+			<li class="col">
+			  <span style="font-size: 14px;color: white; ">如有任何查詢，請聯絡：Gina 54818365 / Frankie 21031260</span>
+			</li><br>
+
+	  			</ul>
+	  			<a href='https://docs.google.com/forms/d/e/1FAIpQLSexHJHumAaC2iKvzbBi-orpwRd9sCVTBBPqWa9s6G03FGY_kg/viewform'>
+	  						  <button type="button" style="background: #A5DEF8;width: 112px;height: 40px;border-radius: 4px;margin-left: 110px;">報名登記 ></button>
+	  			</a>
+	  		
+	  </section>
+
+
+  
+ 
+  <!-- Join our community -->
+  <section class="community-sec padding-top-100 padding-bottom-150">
+    <div class="container">
+        <img src="images/logo1.png" style='width:260px;position: absolute;top: 100px;'>
+        <div style="float:right;"><img src="images/contact.png" style='width:150px;'></div>
+        <div class="col">
+
+        </div>
+
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <!-- <div class="container">
+      <div class="parthner">
+        <h6>Partnered with Innovative Globally</h6>
+        <ul>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>-->
+
+    <!-- Rights -->
+    <div class="rights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2021 區塊鏈創新學院</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- GO TO TOP -->
+  <a href="#" class="cd-top"><i class="ion-chevron-up"></i></a>
+  <!-- GO TO TOP End -->
+
+  <!-- Script -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
