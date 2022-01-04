@@ -47,6 +47,7 @@
 </head>
 
 <body>
+	
 
   <!-- LOADER -->
   <div id="loader">
@@ -134,43 +135,37 @@
 				港幣賬戶:  382849103104302<br><br>
 				</p>
 				</div>
-				
-				
-				<div class="sm-intro" style="background: #2B334A;border-radius: 10px; text-align: left;">
-				
-				<br>
-				<form>
-					
-				  <label for="fname">姓名（和轉賬戶口一致）<span style="color: red;">*</span></label>
-				  <input type="text" id="fname" name="name" placeholder="請輸入你的姓名"><br>
-				  <label for="lname">聯絡電話<span style="color: red;">*</span></label>
-				  <input type="text" id="lname" name="phone"placeholder="請輸入你的電話"><br>
-				  <label for="lname">電郵地址<span style="color: red;">*</span></label>
-				  <input type="text" id="lname" name="email" placeholder="請輸入你的電子郵件"><br>
-				  <label for="lname">轉賬參考編號（reference code）<span style="color: red;">*</span></label>
-				  <input type="text" id="lname" name="code" placeholder="請輸入你的參考編號"><br>
-				</form>
-				<br>
-				<a href=''>
-							  <button type="button" style="background: #A5DEF8;width: 112px;height: 40px;border-radius: 4px;">提交</button></li>
-				</a>
-				<br><br>
-				</div>
-				
 
-	  
-	        </section>
-	  
-	  
-	  
-	  
-	  
-	  
 
+
+  <div class="sm-intro" style="background: #2B334A;border-radius: 10px; text-align: left;">
+    <form>
+      <label for="fname">姓名（和轉賬戶口一致）<span style="color: red;">*</span></label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">聯絡電話<span style="color: red;">*</span></label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 	  
+	  <label for="mail">電郵地址<span style="color: red;">*</span></label>
+	  <input type="text" id="mail" name="mail" placeholder="Your last name..">
 	  
-	  
-	  
+	  <label for="refer">轉賬參考編號（reference code）<span style="color: red;">*</span></label>
+	  <input type="text" id="refer" name="refer" placeholder="Your last name..">
+  
+
+      <button type="submit" id="submit" style="background: #A5DEF8;width: 112px;height: 40px;border-radius: 4px;">Submit</button>
+    </form>
+	<br>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</section>
+
+
+
+
+	    
 
   
  
@@ -231,6 +226,8 @@
   <script src="js/jquery.sticky.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
 </body>
 
 </html>
