@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="M_Adnan">
+  
+  <title>區塊鏈創新學院</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="fonts/flaticon.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
+  <link rel="icon" href="images/ETDLogo.jpg" type="image/x-icon" />
+  <!-- JavaScripts -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Online Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Montserrat:300,400,500,600,700,800"
+    rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+  <!-- Socket IO -->
+  <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"
+    integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg"
+    crossorigin="anonymous"></script>
+
+  <!-- Realtime block info js -->
+  <script src="./js/blockInfo.js"></script>
+  <script src="./js/chart.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="position-center-center">
+      <div class="ldr"></div>
+    </div>
+  </div>
+
+  <!-- Wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header class="sticky">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a> </div>
+        <nav class="navbar ownmenu navbar-expand-lg">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+              class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="scroll active"><a href="#hme">首頁</a></li>
+              <li class="scroll"> <a href="#course">課程</a> </li>
+              <li class="scroll"> <a href="#about">關於我們</a> </li>
+              <li class="scroll"> <a href="#contact">聯繫我們</a> </li>
+			  <li class="dropdown"> 
+			  <a href="#">繁體中文</a> 
+			  <div class="dropdown-content">
+			    <p><a href="">简体中文</a></p>
+			    <p><a href="">English</a></p>
+			  </div>
+			  </li>
+			   
+			   
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+
+      <!-- Development -->
+      <section class="dev-activ text-center padding-top-100 padding-bottom-50" style="background-color:#151B2E;">
+        <div class="container" id="about" data-spy="scroll">
+          <div class="sm-intro">
+            <h2 style="color: white;line-height: 100px;">區塊鏈高級研修班報名登記</h2><br>
+            <p style="color: white;text-align: left;font-size: 20px;">背景</p>
+      			<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">區塊鏈創新學院由香港金融管理學院和教鏈科技有限公司聯合發起，國內外多所知名高校資源支持，依託在金融科技領域多年積累的優秀人才資源、技術資源、教育資源、金融資源和網路資源，旨在為全球優秀的區塊鏈人才及前沿技術提供區塊鏈教育及應用服務。</p>
+          </div>
+		  <div class="sm-intro">
+		    <p style="color: white;text-align: left;font-size: 20px;">課程介紹</p>
+		        			<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">區塊鏈技術正引領新的行業和應用的革命，深刻影響著下一代互聯網和資訊技術的發展，日益受到全球各國政府和業界的重視，大量的區塊鏈相關機會蜂擁而至。本課程讓學生快速掌握區塊鏈技術的核心，深刻理解分散式系統和共識經濟，底層技術架構和上層應用，並實際操作最前沿的區塊鏈技術平臺和應用。不論技術背景，產品設計，投資或創業，本課程所覆蓋的區塊鏈基礎技術知識，分散式運算和共識系統，以及實際應用的案例，都能為學生進入區塊鏈行業做好準備。</p>
+		  </div>
+		  <div class="sm-intro">
+		    <p style="color: white;text-align: left;font-size: 20px;">重點資訊</p>
+		        			<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">課程時長：6個月</p>
+<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">授課地點：主課室位於香港上環德輔道西九號，其他考察及實訓場所另行安排</p>
+<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">遴選安排：為保證最佳教學品質、維護區塊鏈優質圈子，每期都需要考核並有名額限制，將根據考核結果確定席位。</p>
+<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;">學費：<span style="color:#A5DEF8;font-size: 14px;">98000</span>港元/人（包含培訓費、課程資料費、導師差旅費、課外活動費、項目實訓費、初步諮詢費等）</p>
+		  <br>
+		  <p style="text-align: left;font-size: 14px;background-color:#A5DEF8;color: #000000;border-radius: 4px;width: 518px;text-align: left;">完成轉賬費用以及填妥表格登記後，我們將有專人聯絡並安排課程介紹及報名程序！</p>
+		  </div>
+
+      </section>
+	  
+	  
+	  <!-- Development -->
+	        <section class="dev-activ text-center padding-bottom-50" style="background-color:#151B2E;">
+	          <div class="container" id="about" data-spy="scroll">
+	            
+	              <h4 style="color: white;">繳費方式</h4><br>
+	              <p style="color: white;text-align: left;font-size: 20px;">銀行轉賬</p>
+	        			<div class="sm-intro" style="background: #2B334A;border-radius: 10px;">
+							<p style="color: white;text-align: left;font-size: 14px;line-height: 28px;"><br>學費：<span style="color:#A5DEF8;font-size: 14px;">98000</span>港元/人（包含培訓費、課程資料費、導師差旅費、課外活動費、項目實訓費、初步諮詢費等）</p>
+	            <br>
+				<p style="color: white;text-align: left;">交通銀行（香港）有限公司<br>
+				SWIFT CODE ：COMMHKHH<br>
+				銀行編號：382<br>
+				帳戶名稱：EDU BLOCKCHAIN LTD<br>
+				港幣賬戶:  382849103104302<br><br>
+				</p>
+				</div>
+				
+				
+				<div class="sm-intro" style="background: #2B334A;border-radius: 10px; text-align: left;">
+				
+				<br>
+				<form>
+					
+				  <label for="fname">姓名（和轉賬戶口一致）<span style="color: red;">*</span></label>
+				  <input type="text" id="fname" name="name" placeholder="請輸入你的姓名">
+				  <label for="lname">聯絡電話<span style="color: red;">*</span></label>
+				  <input type="text" id="lname" name="phone"placeholder="請輸入你的電話">
+				  <label for="lname">電郵地址<span style="color: red;">*</span></label>
+				  <input type="text" id="lname" name="email" placeholder="請輸入你的電子郵件">
+				  <label for="lname">轉賬參考編號（reference code）<span style="color: red;">*</span></label>
+				  <input type="text" id="lname" name="code" placeholder="請輸入你的參考編號">
+				</form>
+				<br>
+				<a href=''">
+							  <button type="button" style="background: #A5DEF8;width: 112px;height: 40px;border-radius: 4px;">提交</button></li>
+				</a>
+				<br><br>
+				</div>
+				
+				
+				
+	  
+	        </section>
+	  
+	  
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+
+  
+ 
+  <!-- Join our community -->
+  <section class="community-sec padding-top-100 padding-bottom-150">
+    <div class="container">
+        <img src="images/logo1.png" style='width:260px;position: absolute;top: 100px;'>
+        <div style="float:right;"><img src="images/contact.png" style='width:150px;'></div>
+        <div class="col">
+
+        </div>
+
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <!-- <div class="container">
+      <div class="parthner">
+        <h6>Partnered with Innovative Globally</h6>
+        <ul>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-3.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-1.png" alt=""></a></li>
+          <li><a href="#."><img src="images/c-mg-2.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>-->
+
+    <!-- Rights -->
+    <div class="rights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© 2021 區塊鏈創新學院</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- GO TO TOP -->
+  <a href="#" class="cd-top"><i class="ion-chevron-up"></i></a>
+  <!-- GO TO TOP End -->
+
+  <!-- Script -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
